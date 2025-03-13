@@ -1,0 +1,64 @@
+/* navbar.component.css */
+
+.navbar {
+  background-color: #0094D9;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 1.2rem;
+  color: #FFFFFF;
+
+}
+
+.navbar-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 10px; /* Space between logo and rectangle */
+}
+
+
+
+/*  Use a border for the rectangle  */
+.rectangle {
+    width: 2px;        /*  Width of the divider  */
+    height: 60px;       /*  Height to match the logo  */
+    background-color: #FFFFFF; /*  Color of the divider  */
+    margin-right: 1rem; /* Space between rectangle and menu items */
+}
+
+
+.nav-link.active, .dropdown-item.active {
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.social-icon {
+    font-size: 1.25rem;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #007bff;
+}
+
+.dropdown-menu {
+    background-color: #0094D9;
+    border: none;
+}
+.dropdown-item{
+    color: white;
+}
+.dropdown-item:hover{
+    color: #007bff;
+     background-color: transparent;
+}
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+.logo-wrapper{
+    display: flex;
+    align-items: center;
+}

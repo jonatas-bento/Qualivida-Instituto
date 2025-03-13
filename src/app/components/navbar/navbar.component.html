@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" [routerLink]="['/']">
+      <div class="logo-wrapper"> 
+        <img src="/assets/images/logoquali.png" alt="Logo" class="navbar-logo" />
+        <div class="rectangle"></div>
+      </div>
+    </a>
+    <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed"
+            [attr.aria-expanded]="!isMenuCollapsed" aria-controls="navbarNav" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" [class.show]="!isMenuCollapsed" id="navbarNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li *ngFor="let item of items" class="nav-item" [class.dropdown]="item.items">
+          <a *ngIf="!item.items" class="nav-link" [routerLink]="item.routerLink" routerLinkActive="active">
+            {{ item.label }}
+          </a>
+          <a *ngIf="item.items" class="nav-link dropdown-toggle" href="#" id="navbarDropdown{{item.label}}" role="button"
+             (click)="toggleSubmenu(item); $event.preventDefault()" [class.show]="item.expanded"
+             [attr.aria-expanded]="item.expanded" data-bs-toggle="dropdown" aria-haspopup="true">
+            {{ item.label }}
+          </a>
+           <ul *ngIf="item.items" class="dropdown-menu" [class.show]="item.expanded" [attr.aria-labelledby]="'navbarDropdown' + item.label">
+            <li *ngFor="let subItem of item.items">
+              <a class="dropdown-item" [routerLink]="subItem.routerLink" routerLinkActive="active">{{ subItem.label }}</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <div class="d-flex align-items-center">
+          <i class="pi pi-instagram social-icon me-2"></i>
+          <i class="pi pi-facebook social-icon me-2"></i>
+          <i class="pi pi-twitter social-icon me-3"></i>
+          <button pButton type="button" label="Fale Conosco" class="p-button-primary"></button>
+      </div>
+    </div>
+  </div>
+</nav>

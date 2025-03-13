@@ -1,0 +1,29 @@
+.firstSec{
+    flex-direction: column;
+    align-content: center;
+}
+.secondSec{
+    background-color: #0094D9;
+    padding: 50px 0;
+    color: aliceblue;
+}
+
+.secondSec .col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.thirdSec .col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+img{
+    width: 392px;
+    height: 459px;
+    border-radius: 05%;
+}

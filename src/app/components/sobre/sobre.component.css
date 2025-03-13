@@ -1,0 +1,54 @@
+/* Add this to your global styles or component styles */
+.sobre-page {
+    font-family: 'Ubuntu', serif;
+  }
+  
+  .hero-section {
+    background-image: url('/assets/images/hero-background.jpg'); /* Add a background image */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+  }
+  
+  .hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .hero-section .lead {
+    font-size: 1.5rem;
+  }
+  
+  .mission-section, .project-section, .impact-section, .cta-section {
+    padding: 60px 0;
+  }
+  
+  .bg-light {
+    background-color: #f8f9fa !important;
+  }
+  
+  .bg-primary {
+    background-color: #007bff !important;
+  }
+  
+  .text-primary {
+    color: #007bff !important;
+  }
+  
+  .shadow {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .rounded {
+    border-radius: 10px;
+  }
+  
+  .cta-section .p-button-success {
+    background-color: #28a745;
+    border-color: #28a745;
+  }

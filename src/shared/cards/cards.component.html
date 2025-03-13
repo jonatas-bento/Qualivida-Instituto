@@ -1,0 +1,15 @@
+<!-- projects-card.component.html -->
+<article class="projectsCard" (click)="navigateToDetails()" style="cursor:pointer;">
+  <div class="projectsCard__container">
+    <header class="projectsCard__header">
+      <h3>{{ cardInformation.title }}</h3>
+    </header>
+    <div class="projectsCard__description">
+      <p>{{ cardInformation.description }}</p>
+    </div>
+  </div>
+  <div class="projectsCard__separator"></div>
+  <div class="projectsCard__image">
+    <img [src]="cardInformation.image" [alt]="cardInformation.altImage" />
+  </div>
+</article>

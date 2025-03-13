@@ -1,0 +1,92 @@
+<div class="container-xl">
+  <!-- Hero Section -->
+  <section class="first py-5">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h1 class="display-4 fw-bold" >Sejam bem vindos à <span style="color: #0094D9">Qualivida</span> </h1>
+        <p class="lead">Somos uma instituição sem fins lucrativos, comprometida em proporcionar serviços especializados em diversas áreas de atuação.</p>
+        <button pButton type="button" label="Fale Conosco" class="p-button-primary"></button>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="/assets/images/presentation4.jpg" alt="Presentation" class="img-fluid rounded shadow">
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="second py-5" style="background: #0094D9">
+    <div class="row">
+      <div class="col-md-12 text-center mb-2">
+        <h2 class="fw-bold" style="color: #fff">Nossos Projetos</h2>
+        <!-- <p class="text-muted" style="color: #fff">Descubra aquilo que nos torna únicos.</p> -->
+      </div>
+    </div>
+    <div class="row">
+      <div *ngFor="let project of projects" class="col-md-4 mb-3 d-flex justify-content-center" >
+        <app-cards [cardInformation]="project"></app-cards>
+      </div>
+
+    </div>
+  </section>
+
+    <!-- Video Section -->
+    <section class="video-section py-5 text-center bg-dark text-white">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="fw-bold">Assista ao nosso vídeo</h2>
+          <p class="text-muted">Conheça um pouco mais sobre nosso trabalho e impacto na comunidade.</p>
+          <div class="video-container">
+            <iframe 
+              width="560" 
+              height="315" 
+              src="https://www.youtube.com/embed/4ny9_SgiJj0?autoplay=1&mute=1" 
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+
+  <!-- Testimonials Section -->
+  <section class="third py-5">
+    <div class="row">
+      <div class="col-md-12 text-center mb-5">
+        <h2 class="fw-bold">O que nossos clientes dizem a nosso respeito</h2>
+        <p class="text-muted">Leia seus relatos...</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card shadow">
+          <div class="card-body">
+            <p class="card-text">"Simplesmente fantástico! Ver minha filha evoluindo tanto é algo que jamais poderia imaginar ser possível. Muito obrigado, Qualivida!"</p>
+            <p class="text-muted">- David Campelo</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card shadow">
+          <div class="card-body">
+            <p class="card-text">"No início não achei que seria tão produtivo. Contudo, em apenas algumas semanas, pude perceber algo tão singular acontecendo ao meu filho que não consigo descrever minha emoção. Altamente recomendável!"</p>
+            <p class="text-muted">- Jurema Soares</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call-to-Action Section -->
+  <section class="fourth py-5 bg-primary text-white">
+    <div class="row text-center">
+      <div class="col-md-12">
+        <h2 class="fw-bold">Pronto para nos conhecer melhor?</h2>
+        <p class="lead">Se una aos participantes de nossa comunidade.</p>
+        <button pButton type="button" label="Inscreva-se agora" class="p-button-success"></button>
+      </div>
+    </div>
+  </section>
+</div>
