@@ -24,9 +24,9 @@ export class ComponentsComponent implements OnInit {
 
   ngOnInit() {
     this.projects = [
-        { id: '1', title: 'Equoterapia', subtitle: 'Subtitle 1', description: 'Aqui tratamos as pessoas com carinho', image: 'https://www.primefaces.org/primeng/showcase/assets/showcase/images/demo/primeng-logo.svg', altImage: 'Primeng Logo' },
-        { id: '2', title: 'Musicoterapia', subtitle: 'Subtitle 2', description: 'Description 2', image: 'https://www.primefaces.org/primeng/showcase/assets/showcase/images/demo/primeng-logo.svg', altImage: 'Primeng Logo' },
-        { id: '3', title: 'Dracaroterapia', subtitle: 'Subtitle 3', description: 'Description 3', image: 'https://www.primefaces.org/primeng/showcase/assets/showcase/images/demo/primeng-logo.svg', altImage: 'Primeng Logo' },
+        { id: '1', title: 'Equoterapia', subtitle: 'Subtitle 1', description: 'Aqui tratamos as pessoas com carinho', image: '/assets/images/horsePic.png', altImage: 'Primeng Logo' },
+        { id: '2', title: 'Musicoterapia', subtitle: 'Subtitle 2', description: 'Description 2', image: '/assets/images/musicPic.png', altImage: 'Primeng Logo' },
+        { id: '3', title: 'Judo', subtitle: 'Subtitle 3', description: 'Description 3', image: 'https://www.primefaces.org/primeng/showcase/assets/showcase/images/demo/primeng-logo.svg', altImage: 'Primeng Logo' },
 
   ]
 
